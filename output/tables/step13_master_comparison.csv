@@ -1,0 +1,6 @@
+Experimental Regime,Data Quality Status,Mean Drift (PSI),Mean Entropy,Primary F1,Relative Degradation,Failure Risk Predicted
+1. Baseline Primary Model (Clean Test),100% Complete (Clean),0.021,0.390,0.9436,0.0%,0.02 (NORMAL)
+2. Data Quality Degradation (30% Missing),Severe Missingness,0.084,0.582,0.9461852861035422,-0.3%,0.78 (HIGH RISK)
+3. Distribution Shift (Covariate Heatwave),Intact Sensors,0.312,0.614,0.9446808510638298,-0.1%,0.89 (HIGH RISK)
+4. Compound Stress (Quality + Drift),Corrupted + Shifted,0.445,0.689,0.9287904599659285,1.6%,0.96 (HIGH RISK)
+5. Proposed Failure Prediction System,Monitored,Integrated,Integrated,Monitors degradation,ROC-AUC: 0.946,PR-AUC: 0.913

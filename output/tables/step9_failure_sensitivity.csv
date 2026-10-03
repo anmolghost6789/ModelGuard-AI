@@ -1,0 +1,5 @@
+Failure Cutoff (Relative F1 Drop),Number of Failures,Failure Rate %,Justification
+10%,127,45.4%,Strict operational margin
+15%,105,37.5%,Standard research benchmark
+20%,86,30.7%,High tolerance
+25%,77,27.5%,High tolerance

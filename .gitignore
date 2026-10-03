@@ -1,0 +1,27 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment & packages
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+
+# Local SQLite databases (keep schema clean)
+storage/*.db
+storage/*.sqlite
+!storage/.gitkeep

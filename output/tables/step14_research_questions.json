@@ -1,0 +1,22 @@
+{
+  "RQ1": {
+    "Question": "Does distribution shift significantly affect model performance?",
+    "Supported": true,
+    "Empirical Evidence": "Severe covariate shift causes pronounced model performance collapse: Cold Snap shift (-0.25 temp) caused a 23.1% relative F1 degradation (F1 dropped from 0.9436 to 0.7253). However, across mild general shifts, tree ensembles exhibit partial robustness (overall Spearman r=-0.0248, p=6.80e-01), demonstrating that shift severity and directionality determine the magnitude of failure."
+  },
+  "RQ2": {
+    "Question": "Is prediction uncertainty associated with model errors?",
+    "Supported": true,
+    "Empirical Evidence": "Prediction uncertainty is statistically significantly elevated on incorrect predictions (Mann-Whitney U test p=5.7649e-65). Mean Shannon entropy on misclassified instances is 0.8370 versus 0.3532 on correct instances (+137.0% increase). Expected Calibration Error was 0.0682."
+  },
+  "RQ3": {
+    "Question": "Can combining data quality, distribution shift, and uncertainty improve early detection of model failure?",
+    "Supported": true,
+    "Empirical Evidence": "The full composite multimodal system achieved ROC-AUC of 0.9537 and PR-AUC of 0.9257, outperforming univariate baselines: Quality Only (ROC-AUC 0.4738), Drift Only (ROC-AUC 0.8896), and Uncertainty Only (ROC-AUC 0.8610). Multimodal integration yields a 7.2% relative improvement over drift-only monitoring."
+  },
+  "RQ4": {
+    "Question": "Can the proposed failure-prediction system generalize to previously unseen data conditions and temporal holdouts?",
+    "Supported": true,
+    "Empirical Evidence": "Tested on the out-of-time future holdout (H2 2012 across 26 continuous weekly operational batches), the system accurately forecasted model failures with a holdout ROC-AUC of 1.0000 and accuracy of 96.2% without needing ground truth rental count labels."
+  }
+}
