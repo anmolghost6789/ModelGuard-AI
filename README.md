@@ -137,7 +137,9 @@ python -m unittest discover -s tests
 
 ### 4. Launch the Interactive Streamlit Web Application
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
+# Or on Windows, simply double-click or run:
+.\run_app.bat
 ```
 *Open `http://localhost:8501` in your browser.*
 
